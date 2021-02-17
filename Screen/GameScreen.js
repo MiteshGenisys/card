@@ -27,7 +27,7 @@ const GameScreen = props => {
     const nextGuessHandelar = direction => {
 
         if ((direction === 'lower' && currentGuess < props.userChoice) || (direction === 'greater' && currentGuess > props.userChoice)) {
-            Alert.alert('You are wrong!!');
+            Alert.alert('You kow that your wrong!!','it should be oposite');
             return;
         }
         if (direction === 'lower') {
